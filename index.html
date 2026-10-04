@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transalor</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Transalor</h1>
+
+      <textarea
+        id="inputText"
+        placeholder="Enter text to translate..."
+      ></textarea>
+
+      <div class="languages">
+        <div>
+          <label for="fromLanguage">From:</label>
+
+          <select id="fromLanguage">
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="kannada">Kannada</option>
+            <option value="urdu">Urdu</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="toLanguage">To:</label>
+
+          <select id="toLanguage">
+            <option value="hindi">Hindi</option>
+            <option value="english">English</option>
+            <option value="kannada">Kannada</option>
+            <option value="urdu">Urdu</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="translateButton">Translate</button>
+
+      <h2>Translation:</h2>
+
+      <div id="outputText" class="output">Translation will appear here.</div>
+
+      <button id="copyButton">Copy</button>
+      <button id="clearButton">Clear</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
